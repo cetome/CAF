@@ -10,7 +10,8 @@ _info:
 _metadata:
   author: cetome
   date: 2022-04-20
-  version: 1.0
+  last-updated: 2022-09-29
+  version: 1.1
   
 _structure:
     level1: objective
@@ -98,6 +99,7 @@ principle:
   D2:
     name: Lessons Learned
     description: When an incident occurs, steps are taken to understand its root causes and to ensure appropriate remediating action is taken to protect against future incidents.
+
 
 contributing_outcome:
   A1.a:
@@ -682,7 +684,7 @@ contributing_outcome:
     description: You contextualise alerts with knowledge of the threat and your systems, to identify those security incidents that require some form of response.
     IGP_not_achieved:
     - Your organisation has no sources of threat intelligence.
-    - You do not apply updates in a timely way, after receiving them. (e.g. AV signature updates, other threat signatures or Indicators of Compromise (IoCs).
+    - You do not apply updates in a timely way, after receiving them. (e.g. AV signature updates, other threat signatures or Indicators of Compromise (IoCs)).
     - You do not receive signature updates for all protective technologies such as AV and IDS or other software in use.
     - You do not evaluate the usefulness of your threat intelligence or share feedback with providers or other users.
     IGP_partially_achieved:
