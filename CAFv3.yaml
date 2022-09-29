@@ -10,7 +10,8 @@ _info:
 _metadata:
   author: cetome
   date: 2019-11-06
-  version: 1.0
+  last-updated: 2022-09-29
+  version: 1.1
   
 _structure:
     level1: objective
@@ -23,18 +24,22 @@ _structure:
 
 objective:
   A:
+    id: A
     name: Managing security risk
     description: Appropriate organisational structures, policies, and processes in place to understand, assess and systematically manage security risks to the network and information systems supporting essential functions.
 
   B:
+    id: B
     name: Protecting against cyber-attack
     description: Proportionate security measures are in place to protect the networks and information systems supporting essential functions from cyber attack.
 
   C:
+    id: C
     name: Detecting cyber security events
     description: Capabilities exist to ensure security defences remain effective and to detect cyber security events affecting, or with the potential to affect, essential functions.
 
   D:
+    id: D
     name: Minimising the impact of cyber security incidents
     description: Capabilities exist to minimise the adverse impact of a cyber security incident on the operation of essential functions, including the restoration of those functions where necessary.
 
@@ -101,7 +106,7 @@ contributing_outcome:
     name: Board Direction
     description: You have effective organisational security management led at board level and articulated clearly in corresponding policies.
     IGP_not_achieved:
-    - The security of network and information systems related to the operation  of essential functions is not discussed or reported on regularly at board-level.
+    - The security of network and information systems related to the operation of essential functions is not discussed or reported on regularly at board-level.
     - Board-level discussions on the security of networks and information systems are based on partial or out-of-date information, without the benefit of expert guidance.
     - The security of networks and information systems supporting your essential functions are not driven effectively by the direction set at board level.
     - Senior management or other pockets of the organisation consider themselves exempt from some policies or expect special accommodations to be made.
@@ -109,7 +114,7 @@ contributing_outcome:
     - N/A
     IGP_achieved:
     - Your organisation's approach and policy relating to the security of networks and information systems supporting the operation of essential functions are owned and managed at board level. These are communicated, in a meaningful way, to risk management decision-makers across the organisation.
-    - Regular board discussions on the security of network and information systems supporting the operation  of your essential function take place, based on timely and accurate information and informed by expert guidance.
+    - Regular board discussions on the security of network and information systems supporting the operation of your essential function take place, based on timely and accurate information and informed by expert guidance.
     - There is a board-level individual who has overall accountability for the security of networks and information systems and drives regular discussion at board-level.
     - Direction set at board level is translated into effective organisational practices that direct and control the security of the networks and information systems supporting your essential function.
 
@@ -129,7 +134,7 @@ contributing_outcome:
 
   A1.c:
     name: Decision-making
-    description: You have senior-level accountability for the security of networks and information systems, and delegate decision-making authority appropriately and effectively. Risks to network and information systems related to the operation  of essential functions are considered in the context of other organisational risks.
+    description: You have senior-level accountability for the security of networks and information systems, and delegate decision-making authority appropriately and effectively. Risks to network and information systems related to the operation of essential functions are considered in the context of other organisational risks.
     IGP_not_achieved:
     - What should be relatively straightforward risk decisions are constantly referred up the chain, or not made.
     - Risks are resolved informally (or ignored) at a local level without a formal reporting mechanism when it is not appropriate.
@@ -407,12 +412,12 @@ contributing_outcome:
     - You have not protected vulnerable stored data important to the operation of the essential function in a suitable way.
     - Backups are incomplete, untested, not adequately secured or could be inaccessible in a disaster recovery or business continuity situation.
     IGP_partially_achieved:
-    - All copies of data important to the operation of your essential function are necessary. Where this important data is transferred to less secure systems, the data is provided with limited detail and/or as a read-only copy.
+    - All copies of data important to the operation of your essential function are necessary. Where this important data is transferred to less secure systems, the data is provided with limited detail and / or as a read-only copy.
     - You have applied suitable physical or technical means to protect this important stored data from unauthorised access, modification or deletion.
     - If cryptographic protections are used, you apply suitable technical and procedural means, but you have limited or no confidence in the robustness of the protection applied.
     - You have suitable, secured backups of data to allow the operation of the essential function to continue should the original data not be available. This may include off-line or segregated backups, or appropriate alternative forms such as paper copies.
     IGP_achieved:
-    - You have only necessary copies of this data. Where data is transferred to less secure systems, the data is provided with limited detail and/or as a read-only copy.
+    - You have only necessary copies of this data. Where data is transferred to less secure systems, the data is provided with limited detail and / or as a read-only copy.
     - You have applied suitable physical or technical means to protect this important stored data from unauthorised access, modification or deletion.
     - If cryptographic protections are used you apply suitable technical and procedural means, and you have justified confidence in the robustness of the protection applied.
     - You have suitable, secured backups of data to allow the operation of the essential function to continue should the original data not be available. This may include off-line or segregated backups, or appropriate alternative forms such as paper copies.
@@ -530,7 +535,7 @@ contributing_outcome:
     description: You are prepared to restore the operation of your essential function following adverse impact.
     IGP_not_achieved:
     - You have limited understanding of all the elements that are required to restore operation of the essential function.
-    - You have not completed business continuity and/or disaster recovery plans for your essential function's networks, information systems and their dependencies.
+    - You have not completed business continuity and / or disaster recovery plans for your essential function's networks, information systems and their dependencies.
     - You have not fully assessed the practical implementation of your disaster recovery plans.
     IGP_partially_achieved:
     - You know all networks, information systems and underlying technologies that are necessary to restore the operation of the essential function and understand their interdependence.
@@ -557,7 +562,7 @@ contributing_outcome:
 
   B5.c:
     name: Backups
-    description: You hold accessible and secured current backups of data and information needed to recover operation of your essential function
+    description: You hold accessible and secured current backups of data and information needed to recover operation of your essential function.
     IGP_not_achieved:
     - Backup coverage is incomplete in coverage and would be inadequate to restore operation of your essential function.
     - Backups are not frequent enough for the operation of your essential function to be restored within a suitable time-frame.
@@ -620,7 +625,7 @@ contributing_outcome:
     - Some user monitoring is done, but not covering a fully agreed list of suspicious or undesirable behaviour.
     - You monitor traffic crossing your network boundary (including IP address connections as a minimum).
     IGP_achieved:
-    - Monitoring is based on an understanding of your networks, common cyber attack methods and what you need awareness of in order to detect potential security incidents that could affect the operation of your essential function. (e.g. presence of malware, malicious emails, user policy violations).
+    - Monitoring is based on an understanding of your networks, common cyber attack methods and what you need awareness of in order to detect potential security incidents that could affect the operation of your essential function (e.g. presence of malware, malicious emails, user policy violations).
     - Your monitoring data provides enough detail to reliably detect security incidents that could affect the operation of your essential function.
     - You easily detect the presence or absence of IoCs on your essential functions, such as known malicious command and control signatures.
     - Extensive monitoring of user activity in relation to the operation of essential functions enables you to detect policy violations and an agreed list of suspicious or undesirable behaviour.
@@ -639,7 +644,7 @@ contributing_outcome:
     IGP_partially_achieved:
     - Only authorised staff can view logging data for investigations.
     - Privileged users can view logging information.
-    - There is some monitoring of access to logging data. (e.g. copying, deleting or modification, or even viewing.)
+    - There is some monitoring of access to logging data (e.g. copying, deleting or modification, or even viewing.)
     IGP_achieved:
     - The integrity of logging data is protected, or any modification is detected and attributed.
     - The logging architecture has mechanisms, processes and procedures to ensure that it can protect itself from threats comparable to those it is trying to identify. This includes protecting the function itself, and the data within it.
@@ -697,7 +702,8 @@ contributing_outcome:
     IGP_not_achieved:
     - There are no staff who perform a monitoring function.
     - Monitoring staff do not have the correct specialist skills.
-    - Monitoring staff are not capable of reporting against governance requirements. Monitoring staff lack the skills to successfully perform any part of the defined workflow.
+    - Monitoring staff are not capable of reporting against governance requirements.
+    - Monitoring staff lack the skills to successfully perform any part of the defined workflow.
     - Monitoring tools are only able to make use of a fraction of logging data being collected.
     - Monitoring tools cannot be configured to make use of new logging streams, as they come online.
     - Monitoring staff have a lack of awareness of the essential functions the organisation provides, what assets relate to those functions and hence the importance of the logging data and security events.
@@ -726,7 +732,7 @@ contributing_outcome:
     IGP_partially_achieved:
     - N/A
     IGP_achieved:
-    - Normal system behaviour is fully understood to such an extent that searching for system abnormalities is a potentially effective way of detecting malicious activity (e.g. You fully understand which systems should and should not communicate and when).
+    - Normal system behaviour is fully understood to such an extent that searching for system abnormalities is a potentially effective way of detecting malicious activity (e.g. you fully understand which systems should and should not communicate and when).
     - System abnormality descriptions from past attacks and threat intelligence, on yours and other networks, are used to signify malicious activity.
     - The system abnormalities you search for consider the nature of attacks likely to impact on the networks and information systems supporting the operation of essential functions.
     - The system abnormality descriptions you use are updated to reflect changes in your networks and information systems and current threat intelligence.
