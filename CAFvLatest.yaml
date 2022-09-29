@@ -2,14 +2,14 @@ _info:
   name: Cyber Assessment Framework
   series: NIS Directive
   country: UK
-  version: 3
-  published: 2019-09-30
+  version: 3.1
+  published: 2022-04-20
   author: NCSC UK
   source: https://www.ncsc.gov.uk/collection/caf/cyber-assessment-framework/
   
 _metadata:
   author: cetome
-  date: 2019-11-06
+  date: 2022-04-20
   last-updated: 2022-09-29
   version: 1.1
   
@@ -42,16 +42,16 @@ objective:
     id: D
     name: Minimising the impact of cyber security incidents
     description: Capabilities exist to minimise the adverse impact of a cyber security incident on the operation of essential functions, including the restoration of those functions where necessary.
-
+ 
 principle:
   A1:
     name: Governance
     description: The organisation has appropriate management policies and processes in place to govern its approach to the security of network and information systems.
-
+  
   A2:
     name: Risk Management
     description: The organisation takes appropriate steps to identify, assess and understand security risks to the network and information systems supporting the operation of essential functions. This includes an overall organisational approach to risk management.
-
+    
   A3:
     name: Asset Management
     description: Everything required to deliver, maintain or support networks and information systems necessary for the operation of essential functions is determined and understood. This includes data, people and systems, as well as any supporting infrastructure (such as power or cooling).
@@ -71,14 +71,14 @@ principle:
   B3:
     name: Data Security
     description: Data stored or transmitted electronically is protected from actions such as unauthorised access, modification, or deletion that may cause an adverse impact on essential functions. Such protection extends to the means by which authorised users, devices and systems access critical data necessary for the operation of essential functions. It also covers information that would assist an attacker, such as design details of networks and information systems.
-
-  B4: 
+  
+  B4:
     name: System Security
     description: Network and information systems and technology critical for the operation of essential functions are protected from cyber attack. An organisational understanding of risk to essential functions informs the use of robust and reliable protective security measures to effectively limit opportunities for attackers to compromise networks and systems.
 
   B5:
     name: Resilient Networks and Systems
-    description: The organisation builds resilience against cyber-attack and system failure into the design, implementation, operation and management of systems that support the operation of essential functions.
+    description: The organisation builds resilience against cyber attack and system failure into the design, implementation, operation and management of systems that support the operation of essential functions.
 
   B6:
     name: Staff Awareness and Training
@@ -137,7 +137,7 @@ contributing_outcome:
     description: You have senior-level accountability for the security of networks and information systems, and delegate decision-making authority appropriately and effectively. Risks to network and information systems related to the operation of essential functions are considered in the context of other organisational risks.
     IGP_not_achieved:
     - What should be relatively straightforward risk decisions are constantly referred up the chain, or not made.
-    - Risks are resolved informally (or ignored) at a local level without a formal reporting mechanism when it is not appropriate.
+    - Risks are resolved informally (or ignored) at a local level when the use of a more formal risk reporting mechanism would be more appropriate.
     - Decision-makers are unsure of what senior management's risk appetite is, or only understand it in vague terms such as "averse" or "cautious".
     - Organisational structure causes risk decisions to be made in isolation. (e.g. engineering and IT don't talk to each other about risk).
     - Risk priorities are too vague to make meaningful distinctions between them. (e.g. almost all risks are rated 'medium' or 'amber').
@@ -175,7 +175,6 @@ contributing_outcome:
     - Your risk assessments are informed by an understanding of the vulnerabilities in the networks and information systems supporting your essential function.
     - The output from your risk management process is a clear set of security requirements that will address the risks in line with your organisational approach to security.
     - Significant conclusions reached in the course of your risk management process are communicated to key security decision-makers and accountable individuals.
-    - You conduct risk assessments when significant events potentially affect the essential function, such as replacing a system or a change in the cyber security threat.
     - Your risk assessments are dynamic and updated in the light of relevant changes which may include technical changes to networks and information systems, change of use and new threat information.
     - The effectiveness of your risk management process is reviewed periodically, and improvements made as required.
     - You perform detailed threat analysis and understand how this applies to your organisation in the context of the threat to your sector and the wider CNI.
@@ -213,19 +212,19 @@ contributing_outcome:
     - You have prioritised your assets according to their importance to the operation of the essential function.
     - You have assigned responsibility for managing physical assets.
     - Assets relevant to essential functions are managed with cyber security in mind throughout their lifecycle, from creation through to eventual decommissioning or disposal.
-    
+
   A4.a:
     name: Supply Chain
     description: The organisation understands and manages security risks to networks and information systems supporting the operation of essential functions that arise as a result of dependencies on external suppliers. This includes ensuring that appropriate measures are employed where third party services are used.
     IGP_not_achieved:
     - You do not know what data belonging to you is held by suppliers, or how it is managed.
     - Elements of the supply chain for essential functions are subcontracted and you have little or no visibility of the sub-contractors.
-    - Relevant contracts do not have security requirements.
+    - You have no understanding of which contracts are relevant and / or relevant contracts do not specify appropriate security obligations.
     - Suppliers have access to systems that provide your essential function that is unrestricted, not monitored or bypasses your own security controls.
     IGP_partially_achieved:
     - You understand the general risks suppliers may pose to your essential functions.
     - You know the extent of your supply chain for essential functions, including sub-contractors.
-    - You engage with suppliers about security, and you set and communicate security requirements in contracts.
+    - You understand which contracts are relevant and you include appropriate security obligations in relevant contracts.
     - You are aware of all third-party connections and have assurance that they meet your organisation's security requirements.
     - Your approach to security incident management considers incidents that might arise in your supply chain.
     - You have confidence that information shared with suppliers that is necessary for the operation of your essential function is appropriately protected from well-known attacks and known vulnerabilities.
@@ -233,7 +232,8 @@ contributing_outcome:
     - You have a deep understanding of your supply chain, including sub-contractors and the wider risks it faces. You consider factors such as supplier's partnerships, competitors, nationality and other organisations with which they sub-contract. This informs your risk assessment and procurement processes.
     - Your approach to supply chain risk management considers the risks to your essential functions arising from supply chain subversion by capable and well-resourced attackers.
     - You have confidence that information shared with suppliers that is essential to the operation of your function is appropriately protected from sophisticated attacks.
-    - You can clearly express the security needs you place on suppliers in ways that are mutually understood and are laid in contracts. There is a clear and documented shared-responsibility model.
+    - You understand which contracts are relevant and you include appropriate security obligations in relevant contracts. You have a proactive approach to contract management which may include a contract management plan for relevant contracts.
+    - Customer / supplier ownership of responsibilities are laid out in contracts.
     - All network connections and data sharing with third parties is managed effectively and proportionately.
     - When appropriate, your incident management process and that of your suppliers provide mutual support in the resolution of incidents.
 
@@ -279,25 +279,28 @@ contributing_outcome:
     - Your policies and processes are integrated with other organisational policies and processes, including HR assessments of individuals' trustworthiness.
     - Your policies and processes are effectively and appropriately communicated across all levels of the organisation resulting in good staff awareness of their responsibilities.
     - Appropriate action is taken to address all breaches of policies and processes with potential to adversely impact the essential function including aggregated breaches.
-   
+
   B2.a:
     name: Identity Verification, Authentication and Authorisation
     description: You robustly verify, authenticate and authorise access to the networks and information systems supporting your essential function.
     IGP_not_achieved:
-    - Authorised users with access to networks or information systems on which your essential function depends cannot be individually identified.
+    - Initial identity verification is not robust enough to provide an acceptable level of confidence of a users' identity profile.
+    - Authorised users and systems with access to networks or information systems on which your essential function depends cannot be individually identified.
     - Unauthorised individuals or devices can access your networks or information systems on which your essential function depends.
-    - User access is not limited to the minimum necessary.
+    - The number of authorised users and systems that have access to your networks and information systems are not limited to the minimum necessary.
     IGP_partially_achieved:
-    - All authorised users with access to networks or information systems on which your essential function depends are individually identified and authenticated.
-    - User access to essential function networks and information systems is limited to the minimum necessary.
-    - You use additional authentication mechanisms, such as two-factor or hardware-backed certificates, for privileged access to sensitive systems such as operational technology.
-    - You individually authenticate and authorise all remote user access to all your networks and information systems that support your essential function.
-    - The list of users with access to essential function networks and systems is reviewed on a regular basis at least annually.
+    - Your process of initial identity verification is robust enough to provide a reasonable level of confidence of a user's identity profile before allowing an authorised user access to networks and information systems that support your essential function.
+    - All authorised users and systems with access to networks or information systems on which your essential function depends are individually identified and authenticated.
+    - The number of authorised users and systems that have access to essential function networks and information systems is limited to the minimum necessary.
+    - You use additional authentication mechanisms, such as multi-factor (MFA), for privileged access to sensitive systems including Operational Technology where appropriate.
+    - You individually authenticate and authorise all remote access to all your networks and information systems that support your essential function.
+    - The list of users and systems with access to essential function networks and systems is reviewed on a regular basis at least annually.
     IGP_achieved:
+    - Your process of initial identity verification is robust enough to provide a high level of confidence of a user's identity profile before allowing an authorised user access to networks and information systems that support your essential function.
     - Only authorised and individually authenticated users can physically access and logically connect to your networks or information systems on which your essential function depends.
-    - User access to all your networks and information systems supporting the essential function is limited to the minimum necessary.
-    - You use additional authentication mechanisms, such as two-factor or hardware-backed certificates, for privileged access to all systems that operate or support your essential function.
-    - You use additional authentication mechanisms, such as two-factor or hardware-backed certificates, when you individually authenticate and authorise all remote user access to all your networks and information systems that support your essential function.
+    - The number of authorised users and systems that have access to all your networks and information systems supporting the essential function is limited to the minimum necessary.
+    - You use additional authentication mechanisms, such as multi-factor (MFA), for privileged access to all systems that operate or support your essential function.
+    - You use additional authentication mechanisms, such as multi-factor (MFA), when you individually authenticate and authorise all remote user access to all your networks and information systems that support your essential function.
     - The list of users with access to networks and systems supporting and delivering the essential function is reviewed on a regular basis, at least every six months.
 
   B2.b:
@@ -332,36 +335,37 @@ contributing_outcome:
     - Where there are “always on” terminals which can perform privileged actions (such as in a control room), there are no additional controls (e.g. physical controls) to ensure access is appropriately restricted.
     - There is no logical separation between roles that an individual may have and hence the actions they perform. (e.g. access to corporate email and privilege user actions).
     IGP_partially_achieved:
-    - Privileged user access requires additional validation, but this does not use a strong form of authentication (e.g. two-factor, hardware authentication or additional real-time security monitoring).
+    - Privileged user access requires additional validation, but this does not use a strong form of authentication (e.g. multi-factor (MFA) or additional real-time security monitoring).
     - The identities of the individuals with privileged access to your essential function systems (infrastructure, platforms, software, configuration, etc) are known and managed. This includes third parties.
     - Activity by privileged users is routinely reviewed and validated. (e.g. at least annually).
     - Privileged users are only granted specific privileged permissions which are essential to their business role or function.
     IGP_achieved:
     - Privileged user access to your essential function systems is carried out from dedicated separate accounts that are closely monitored and managed.
-    - The issuing of temporary, time-bound rights for privileged user access and external third-party support access is either in place or you are migrating to an access control solution that supports this functionality.
+    - The issuing of temporary, time-bound rights for privileged user access and external third-party support access is in place.
     - Privileged user access rights are regularly reviewed and always updated as part of your joiners, movers and leavers process.
-    - All privileged user access to your networks and information systems requires strong authentication, such as two-factor, hardware authentication, or additional real-time security monitoring.
+    - All privileged user access to your networks and information systems requires strong authentication, such as multi-factor (MFA) or additional real-time security monitoring.
     - All privileged user activity is routinely reviewed, validated and recorded for offline analysis and investigation.
-      
+
   B2.d:
     name: Identity and Access Management (IdAM)
-    description: You assure good management and maintenance of identity and access control for your networks and information systems supporting the essential function.
+    description: You closely manage and maintain identity and access control for users, devices and systems accessing the networks and information systems supporting the essential function.
     IGP_not_achieved:
-    - Greater rights are granted to users than necessary.
-    - User rights are granted without validation of their identity and requirement for access.
-    - User rights are not reviewed when they move jobs.
-    - User rights remain active when people leave your organisation.
+    - Greater rights are granted than necessary.
+    - Identity validation and requirement for access of a user, device or systems is not carried out.
+    - User rights are not reviewed when users change roles.
+    - User rights remain active when users leave your organisation.
+    - Access rights granted to devices or systems to access other devices and systems are not reviewed on a regular basis (at least annually).
     IGP_partially_achieved:
     - You follow a robust procedure to verify each user and issue the minimum required access rights.
     - You regularly review access rights and those no longer needed are revoked.
-    - User permissions are reviewed when people change roles via your joiners, leavers and movers process.
-    - All user access is logged and monitored.
+    - User access rights are reviewed when users change roles via your joiners, leavers and movers process.
+    - All user, device and system access to the systems supporting the essential function is logged and monitored, but it is not compared to other log data or access records.
     IGP_achieved:
-    - Your procedure to verify each user and issue the minimum required access rights is robust and regularly audited.
+    - You follow a robust procedure to verify each user and issue the minimum required access rights, and the application of the procedure is regularly audited.
     - User permissions are reviewed both when people change roles via your joiners, leavers and movers process and at regular intervals - at least annually.
-    - All user access is logged and monitored.
+    - All user, device and systems access to the systems supporting the essential function is logged and monitored.
     - You regularly review access logs and correlate this data with other access records and expected activity.
-    - Attempts by unauthorised users to connect to your systems are alerted, promptly assessed and investigated.
+    - Attempts by unauthorised users, devices or systems to connect to the systems supporting the essential function are alerted, promptly assessed and investigated.
 
   B3.a:
     name: Understanding Data
@@ -401,7 +405,7 @@ contributing_outcome:
     - You apply appropriate technical means (e.g. cryptography) to protect data that travels over non-trusted or openly accessible carriers, but you have limited or no confidence in the robustness of the protection applied.
     IGP_achieved:
     - You have identified and protected (effectively and proportionately) all the data links that carry data important to the operation of your essential function.
-    - You apply appropriate physical or technical means to protect data that travels over non-trusted or openly accessible carriers, with justified confidence in the robustness of the protection applied.
+    - You apply appropriate physical and / or technical means to protect data that travels over non-trusted or openly accessible carriers, with justified confidence in the robustness of the protection applied.
     - Suitable alternative transmission paths are available where there is a significant risk of impact on the operation of the essential function due to resource limitation (e.g. transmission equipment or function failure, or important data being blocked or jammed).
       
   B3.c:
@@ -413,7 +417,7 @@ contributing_outcome:
     - Backups are incomplete, untested, not adequately secured or could be inaccessible in a disaster recovery or business continuity situation.
     IGP_partially_achieved:
     - All copies of data important to the operation of your essential function are necessary. Where this important data is transferred to less secure systems, the data is provided with limited detail and / or as a read-only copy.
-    - You have applied suitable physical or technical means to protect this important stored data from unauthorised access, modification or deletion.
+    - You have applied suitable physical and / or technical means to protect this important stored data from unauthorised access, modification or deletion.
     - If cryptographic protections are used, you apply suitable technical and procedural means, but you have limited or no confidence in the robustness of the protection applied.
     - You have suitable, secured backups of data to allow the operation of the essential function to continue should the original data not be available. This may include off-line or segregated backups, or appropriate alternative forms such as paper copies.
     IGP_achieved:
@@ -422,7 +426,7 @@ contributing_outcome:
     - If cryptographic protections are used you apply suitable technical and procedural means, and you have justified confidence in the robustness of the protection applied.
     - You have suitable, secured backups of data to allow the operation of the essential function to continue should the original data not be available. This may include off-line or segregated backups, or appropriate alternative forms such as paper copies.
     - Necessary historic or archive data is suitably secured in storage.
-      
+
   B3.d:
     name: Mobile Data
     description: You have protected data important to the operation of the essential function on mobile devices.
@@ -438,18 +442,18 @@ contributing_outcome:
     - Mobile devices that hold data that is important to the operation of the essential function are catalogued, are under your organisation's control and configured according to best practice for the platform, with appropriate technical and procedural policies in place.
     - Your organisation can remotely wipe all mobile devices holding data important to the operation of essential function.
     - You have minimised this data on these mobile devices. Some data may be automatically deleted off mobile devices after a certain period.
-      
+
   B3.e:
     name: Media / Equipment Sanitisation
     description: You appropriately sanitise media and equipment holding data important to the operation of the essential function.
     IGP_not_achieved:
     - Some or all devices, equipment or removable media that hold data important to the operation of the essential function are disposed of without sanitisation of that data.
     IGP_partially_achieved:
-    - N/A
+    - Data important to the operation of the essential function is removed from all devices, equipment and removable media before reuse and / or disposal.
     IGP_achieved:
     - You catalogue and track all devices that contain data important to the operation of the essential function (whether a specific storage device or one with integral storage).
-    - All data important to the operation of the essential function is sanitised from all devices, equipment or removable media before disposal.
-      
+    - All data important to the operation of the essential function is sanitised from all devices, equipment or removable media before reuse and / or disposal using an assured product or service.
+
   B4.a:
     name: Security by Design
     description: You design security into the network and information systems that support the operation of essential functions. You minimise their attack surface and ensure that the operation of the essential function should not be impacted by the exploitation of any single vulnerability.
@@ -507,14 +511,13 @@ contributing_outcome:
     - Your systems and devices supporting the operation of the essential function are only administered or maintained by authorised privileged users from dedicated devices that are technically segregated and secured to the same level as the networks and systems being maintained.
     - You regularly review and update technical knowledge about networks and information systems, such as documentation and network diagrams, and ensure they are securely stored.
     - You prevent, detect and remove malware or unauthorised software. You use technical, procedural and physical measures as necessary.
-      
+
   B4.d:
     name: Vulnerability Management
     description: You manage known vulnerabilities in your network and information systems to prevent adverse impact on the essential function.
     IGP_not_achieved:
     - You do not understand the exposure of your essential function to publicly-known vulnerabilities.
     - You do not mitigate externally-exposed vulnerabilities promptly.
-    - There are no means to check data or software imports for malware.
     - You have not recently tested to verify your understanding of the vulnerabilities of the networks and information systems that support your essential function.
     - You have not suitably mitigated systems or software that is no longer supported.
     - You are not pursuing replacement for unsupported systems or software.
@@ -564,16 +567,15 @@ contributing_outcome:
     name: Backups
     description: You hold accessible and secured current backups of data and information needed to recover operation of your essential function.
     IGP_not_achieved:
-    - Backup coverage is incomplete in coverage and would be inadequate to restore operation of your essential function.
+    - Backup coverage is incomplete and does not include all relevant data and information needed to restore the operation of your essential function.
     - Backups are not frequent enough for the operation of your essential function to be restored within a suitable time-frame.
     IGP_partially_achieved:
-    - You have appropriately secured backups (including data, configuration information, software, equipment, processes and key roles or knowledge). These backups will be accessible to recover from an extreme event.
+    - You have appropriately secured backups (including data, configuration information, software, equipment, processes and knowledge). These backups will be accessible to recover from an extreme event.
     - You routinely test backups to ensure that the backup process functions correctly and the backups are usable.
     IGP_achieved:
     - Your comprehensive, automatic and tested technical and procedural backups are secured at centrally accessible or secondary sites to recover from an extreme event.
-    - Key roles are duplicated, and operational delivery knowledge is shared with all individuals involved in the operations and recovery of the essential function.
     - Backups of all important data and information needed to recover the essential function are made, tested, documented and routinely reviewed.
-    
+
   B6.a:
     name: Cyber Security Culture
     description: You develop and pursue a positive cyber security culture.
@@ -620,7 +622,7 @@ contributing_outcome:
     - You are not able to audit the activities of users in relation to your essential function.
     - You do not capture any traffic crossing your network boundary including as a minimum IP connections.
     IGP_partially_achieved:
-    - Data relating to the security and operation of some areas of your essential functions is collected.
+    - Data relating to the security and operation of some areas of your essential functions is collected but coverage is not comprehensive.
     - You easily detect the presence or absence of IoCs on your essential function, such as known malicious command and control signatures.
     - Some user monitoring is done, but not covering a fully agreed list of suspicious or undesirable behaviour.
     - You monitor traffic crossing your network boundary (including IP address connections as a minimum).
@@ -665,14 +667,14 @@ contributing_outcome:
     - Logs are reviewed infrequently.
     IGP_partially_achieved:
     - Alerts from third party security software are investigated, and action taken.
-    - Some logging datasets can be easily queried with search tools to aid investigations.
+    - Some, but not all, logging datasets can be easily queried with search tools to aid investigations.
     - The resolution of alerts to a network asset or system is performed regularly.
     - Security alerts relating to some essential functions are prioritised.
     - Logs are reviewed at regular intervals.
     IGP_achieved:
     - Logging data is enriched with other network knowledge and data when investigating certain suspicious activity or alerts.
-    - A wide range of signatures and indicators of compromise are used for investigations of suspicious activity and alerts.
-    - Alerts can be easily resolved to network assets using knowledge of networks and systems.
+    - A wide range of signatures and indicators of compromise is used for investigations of suspicious activity and alerts.
+    - Alerts can be easily resolved to network assets using knowledge of networks and systems. The resolution of these alerts is performed in almost real time.
     - Security alerts relating to all essential functions are prioritised and this information is used to support incident management.
     - Logs are reviewed almost continuously, in real time.
     - Alerts are tested to ensure that they are generated reliably and that it is possible to distinguish genuine security incidents from false alarms.
@@ -686,12 +688,12 @@ contributing_outcome:
     - You do not receive signature updates for all protective technologies such as AV and IDS or other software in use.
     - You do not evaluate the usefulness of your threat intelligence or share feedback with providers or other users.
     IGP_partially_achieved:
-    - Your organisation uses some threat intelligence services, but you don't choose providers specifically because of your business needs, or specific threats in your sector (e.g. sector-based infoshare, ICS software vendors, anti-virus providers, specialist threat intel firms).
+    - Your organisation uses some threat intelligence services, but you don't necessarily choose sources or providers specifically because of your business needs, or specific threats in your sector (e.g. sector-based infoshare, ICS software vendors, anti-virus providers, specialist threat intel firms, special interest groups).
     - You receive updates for all your signature based protective technologies (e.g. AV, IDS).
     - You apply some updates, signatures and IoCs in a timely way.
     - You know how effective your threat intelligence is (e.g. by tracking how threat intelligence helps you identify security problems).
     IGP_achieved:
-    - You have selected threat intelligence feeds using risk-based and threat-informed decisions based on your business needs and sector (e.g. vendor reporting and patching, strong anti-virus providers, sector and community-based infoshare).
+    - You have selected threat intelligence feeds using risk-based and threat-informed decisions based on your business needs and sector (e.g. vendor reporting and patching, strong anti-virus providers, sector and community-based infoshare, special interest groups).
     - You apply all new signatures and IoCs within a reasonable (risk-based) time of receiving them.
     - You receive signature updates for all your protective technologies (e.g. AV, IDS).
     - You track the effectiveness of your intelligence feeds and actively share feedback on the usefulness of IoCs and any other indicators with the threat community (e.g. sector partners, threat intelligence providers, government agencies).
@@ -703,7 +705,7 @@ contributing_outcome:
     - There are no staff who perform a monitoring function.
     - Monitoring staff do not have the correct specialist skills.
     - Monitoring staff are not capable of reporting against governance requirements.
-    - Monitoring staff lack the skills to successfully perform any part of the defined workflow.
+    - Monitoring staff lack the skills to successfully perform some significant parts of the defined workflow.
     - Monitoring tools are only able to make use of a fraction of logging data being collected.
     - Monitoring tools cannot be configured to make use of new logging streams, as they come online.
     - Monitoring staff have a lack of awareness of the essential functions the organisation provides, what assets relate to those functions and hence the importance of the logging data and security events.
@@ -779,6 +781,7 @@ contributing_outcome:
     - You understand the resources that will likely be needed to carry out any required response activities, and arrangements are in place to make these resources available.
     - You understand the types of information that will likely be needed to inform response decisions and arrangements are in place to make this information available.
     - Your response team members have the skills and knowledge required to decide on the response actions necessary to limit harm, and the authority to carry them out.
+    - Key roles are duplicated, and operational delivery knowledge is shared with all individuals involved in the operations and recovery of the essential function.
     - Back-up mechanisms are available that can be readily activated to allow continued operation of your essential function (although possibly at a reduced level) if primary networks and information systems fail or are unavailable.
     - Arrangements exist to augment your organisation's incident response capabilities with external support if necessary (e.g. specialist cyber incident responders).
 
